@@ -15,4 +15,5 @@ function keliling(){
 
     console.log(keliling);
     document.getElementById('keliling').value = keliling;
+    document.getElementById('coba').style.display='block';
 }

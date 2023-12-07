@@ -13,22 +13,25 @@
 <h1>Welcome to Katik</h1>
 <p>Hai Sobat, Selamat datang dikatik</p>
 <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangunan datar</p>
+</header>
+
 <ul class="navbar">
-    <li><a href="#Luas">Luas Segitiga</a></li>
+    <li><a class="" href="#Luas">Luas Segitiga</a></li>
     <li><a href="#Kel">Keliling Segitiga</a></li>
 </ul>
+<div class="">
 <nav>
-    <h1 class="luassegitiga">Luas Segitiga</h1>
+    <h1 class="luassegitiga" id="Luas">Luas Segitiga</h1>
 </nav>
 <img src="Segitiga.png" alt="Segitiga">
 <p style="text-align: left;">Rumus Luas Segitiga Yaitu :</p>
-<p>L = 1/2 x a x t</p>
+<p class="rumus">L = 1/2 x a x t</p>
 <ul class="macam">Yaitu Dimana :
     <li>L = Luas</li>
     <li>a = Panjang Alas</li>
     <li>t = Tinggi</li>
 </ul>
-<h2>Hitung Luas Segitiga</h2>
+<h2 class="luassegitiga" id="Kel">Hitung Luas Segitiga</h2>
 
 <input type="text" name="alas" id="alas" placeholder="Alas">
 <input type="text" name="tinggi" id="tinggi" placeholder="Tinggi">
@@ -40,22 +43,51 @@
     <h1 class="luassegitiga">Keliling Segitiga</h1>
 </nav>
 <img src="Segitiga.png" alt="Segitiga">
-<p style="text-align: left;">Rumus Keliling Segitiga Yaitu :</p>
-<p>K = S1 + S2 + S3</p>
+<p class="luassegitiga">Rumus Keliling Segitiga Yaitu :</p>
+<p class="luassegitiga">K = S1 + S2 + S3</p>
 <ul class="macam">Dimana :
     <li>K = Keliling</li>
     <li>S1 = Sisi A</li>
     <li>S2 = Sisi B</li>
     <li>S3 = Sisi C</li>
 </ul>
-<h2 id="#Kel">Hitung Keliling Segitiga</h2>
+<h2 class="luassegitiga">Hitung Keliling Segitiga</h2>
 <input type="text" name="a" id="a" placeholder="SISI A">
 <input type="text" name="b" id="b" placeholder="SISI B">
 <input type="text" name="c" id="c" placeholder="SISI C">
 <input type="text" name="keliling" id="keliling" disabled="true">
 
-<button class="hitung" onclick="keliling()">Hitung</button><br>
+<div class="" id="" style="display: none">
+<p class="macam">K = S1 + S2 + S3</p>
+</div>
+<table id="coba" style="display: none">
+    <tr>
+        <td>K</td>
+        <td>=</td>
+        <td>S1</td>
+        <td>+</td>
+        <td>S2</td>
+        <td>+</td>
+        <td>S3</td>
+    </tr>
+    <tr>
+        <td>K</td>
+        <td>=</td>
+        <td class="b"></td>
+        <td>+</td>
+        <td class="a"></td>
+        <td>+</td>
+        <td class="c"></td>
+    </tr>
+    <tr>
+        <td>K</td>
+    </tr>
+</table>
+
+<button type="button" class="hitung" onclick="keliling()">Hitung</button><br>
 <button class="reset" onclick="reset">Reset</button>
+
+</div>
 </header>
 </body>
 </html>
